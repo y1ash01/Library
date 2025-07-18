@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.html,body{
+    height:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+h1{
+    text-align: center;
+    padding:20px
+}
+
+.container{
+    overflow: auto;
+    resize: both;
+    height:100%;
+    display: grid;
+    gap:40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:40px;
+    margin:40px;
+    background-color: rgb(128, 128, 128,0.3);
+}
+
+.card{
+    background-color: white;
+    border-radius: 20px;
+    padding:40px;
+    font-size: xx-large;
+    font-weight: bold;
+    height: 200px;
+    width:500px;
+    white-space: pre-line;
+    overflow: auto;
+    display: flex;
+}   
+
+.form-con{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding:40px 80px;
+}
+
+form{
+    border-radius: 20px;
+}
+
+dialog{
+    align-self: center;
+    justify-self: center;
+    border-radius: 15px;
+    outline-style: none;
+    font-size: xx-large;
+}
+
+input,select,option{
+    height: 25px;
+    width:200px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.form-con>button{
+    height:50px;
+    border-radius: 10px;
+    font-size: x-large;
+}
+
+body>h1+button{
+    justify-content: center;
+    background-color: black;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+    height:100px;
+    width:200px;
+    font-size: xx-large;
+    border-radius: 25px;
+}
+
+.togglebtn{
+    background-color: black;
+    height:100px;
+    width:200px;
+    font-size: xx-large;
+    border-radius: 25px;
+    color: white;
+}
+
+.deletebtn{
+    background-color: red;
+    height:100px;
+    width:200px;
+    font-size: xx-large;
+    border-radius: 25px;
+    color:white;
+}
+
+.semantic{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:40px;
+    margin-left:40px;
+}

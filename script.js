@@ -1,17 +1,18 @@
 const myLibrary = [];
 
-function Book(title,author,pages,read,id){
-    this.title = title;
-    this.author = author;
-    this.pages  = pages;
-    this.read = read;
-    this.id = id;
+class Book{
+    constructor(title,author,pages,read,id){
+        this.title = title;
+        this.author = author;
+        this.pages  = pages;
+        this.read = read;
+        this.id = id;
+    }
 }
 
-function addBookToLibrary(title,author,pages,read){
-    let id = crypto.randomUUID();
-    let book = new Book(title,author,pages,read,id);
-    myLibrary.push(book);
+function addBookToLibrary(title, author, pages, read) {
+    const newBook = new Book(title, author, pages, read);
+    myLibrary.push(newBook);
 }
 
 function display(){
